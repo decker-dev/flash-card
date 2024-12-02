@@ -196,7 +196,7 @@ export default function Configuracion() {
 
           <Card className="w-full max-w-2xl">
             <CardHeader>
-              <CardTitle>Flashcards Existentes</CardTitle>
+              <CardTitle>Tarjetas Existentes</CardTitle>
             </CardHeader>
             <CardContent>
               <Table>
