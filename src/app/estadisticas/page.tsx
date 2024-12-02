@@ -39,10 +39,10 @@ export default function Estadisticas() {
         <CardContent>
           <div className="space-y-2">
             <p>Total de tarjetas respondidas: {stats.totalCards}</p>
-            <p>Perfecto: {stats.perfect} ({((stats.perfect / stats.totalCards) * 100).toFixed(2)}%)</p>
-            <p>Bien: {stats.good} ({((stats.good / stats.totalCards) * 100).toFixed(2)}%)</p>
-            <p>Mal: {stats.bad} ({((stats.bad / stats.totalCards) * 100).toFixed(2)}%)</p>
-            <p>Nada: {stats.none} ({((stats.none / stats.totalCards) * 100).toFixed(2)}%)</p>
+            <p>Perfecto: {stats.perfect} ({((stats.perfect / stats.totalCards) * 100 || 0).toFixed(2)}%)</p>
+            <p>Bien: {stats.good} ({((stats.good / stats.totalCards) * 100 || 0).toFixed(2)}%)</p>
+            <p>Mal: {stats.bad} ({((stats.bad / stats.totalCards) * 100 || 0).toFixed(2)}%)</p>
+            <p>Nada: {stats.none} ({((stats.none / stats.totalCards) * 100 || 0).toFixed(2)}%)</p>
           </div>
         </CardContent>
       </Card>
