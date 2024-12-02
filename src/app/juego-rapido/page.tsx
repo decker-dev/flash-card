@@ -67,7 +67,7 @@ export default function JuegoRapido() {
 
   const updateGlobalStats = (rating: 'perfect' | 'good' | 'bad' | 'none') => {
     const storedStats = localStorage.getItem('globalStats')
-    let stats: GlobalStats = storedStats ? JSON.parse(storedStats) : {
+    const stats: GlobalStats = storedStats ? JSON.parse(storedStats) : {
       totalCards: 0,
       perfect: 0,
       good: 0,
